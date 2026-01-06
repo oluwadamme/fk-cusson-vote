@@ -12,7 +12,7 @@ ENTRY_ID = '282'
 NONCE = '4d27efc39a'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 150 
+MAX_PER_RUN = 250 
 
 # --- Logging Setup ---
 logging.basicConfig(
