@@ -9,7 +9,7 @@ import logging
 # --- Configuration ---
 URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
 ENTRY_ID = '282'
-NONCE = '4d27efc39a'
+NONCE = '08e8297314'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
 MAX_PER_RUN = 250 
