@@ -121,7 +121,7 @@ def main():
                     f.write(email + "\n")
             
             if idx < len(batch) - 1:
-                wait_time = random.uniform(5, 20)
+                wait_time = random.uniform(5, 10)
                 logger.info(f"Waiting {wait_time:.1f}s before next request...")
                 time.sleep(wait_time)
                 
