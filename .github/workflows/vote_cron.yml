@@ -29,10 +29,10 @@ jobs:
       - name: Run Voting Script
         run: python process_votes.py
 
-      - name: Commit Progress
+      - name: Commit Progress and Logs
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add progress.txt
-          git commit -m "Update voting progress [skip ci]" || echo "No changes to commit"
+          git add progress.txt voting.log
+          git commit -m "Update voting progress and logs [skip ci]" || echo "No changes to commit"
           git push

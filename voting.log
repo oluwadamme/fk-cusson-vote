@@ -1,0 +1,14 @@
+2026-01-06 03:04:01,023 [INFO] Scanning data sources for emails...
+2026-01-06 03:04:01,024 [INFO] Loaded 500 emails from MOCK_DATA.csv
+2026-01-06 03:04:01,025 [INFO] Loaded 500 emails from MOCK_DATA (1).csv
+2026-01-06 03:04:01,026 [INFO] Loaded 500 emails from MOCK_DATA (2).csv
+2026-01-06 03:04:01,027 [INFO] Loaded 500 emails from MOCK_DATA (3).csv
+2026-01-06 03:04:01,027 [INFO] --- Progress Summary ---
+2026-01-06 03:04:01,027 [INFO] Total Unique Emails: 2000
+2026-01-06 03:04:01,027 [INFO] Already Processed:   36
+2026-01-06 03:04:01,027 [INFO] Remaining:           1964
+2026-01-06 03:04:01,028 [INFO] Starting batch of 50 emails...
+2026-01-06 03:04:04,180 [INFO] SUCCESS: cmcphilip7a@nature.com
+2026-01-06 03:04:04,181 [INFO] Waiting 19.0s before next request...
+2026-01-06 03:04:14,553 [INFO] Process stopped by user.
+2026-01-06 03:04:14,554 [INFO] Batch complete.
