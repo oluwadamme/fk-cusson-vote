@@ -12,7 +12,7 @@ ENTRY_ID = '282'
 NONCE = '4d27efc39a'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 50 
+MAX_PER_RUN = 150 
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -121,7 +121,7 @@ def main():
                     f.write(email + "\n")
             
             if idx < len(batch) - 1:
-                wait_time = random.uniform(5, 25)
+                wait_time = random.uniform(5, 20)
                 logger.info(f"Waiting {wait_time:.1f}s before next request...")
                 time.sleep(wait_time)
                 
