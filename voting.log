@@ -10224,3 +10224,13 @@
 2026-01-08 01:23:39,495 [INFO] Starting batch of 1 emails...
 2026-01-08 01:23:41,436 [WARNING] REJECTED: wvergine0@icq.com | Response: {"success":false,"data":"You have already voted for Folakemi. You can vote for other babies, but onl
 2026-01-08 01:23:41,436 [INFO] Batch complete.
+2026-01-08 03:26:44,876 [INFO] Scanning data sources for emails...
+2026-01-08 03:26:44,878 [INFO] Loaded 1000 emails from MOCK_DATA (1).csv
+2026-01-08 03:26:44,881 [INFO] Loaded 1000 emails from MOCK_DATA.csv
+2026-01-08 03:26:44,881 [INFO] --- Progress Summary ---
+2026-01-08 03:26:44,881 [INFO] Total Unique Emails: 2000
+2026-01-08 03:26:44,881 [INFO] Already Processed:   3748
+2026-01-08 03:26:44,882 [INFO] Remaining:           1
+2026-01-08 03:26:44,882 [INFO] Starting batch of 1 emails...
+2026-01-08 03:26:46,822 [WARNING] REJECTED: wvergine0@icq.com | Response: {"success":false,"data":"You have already voted for Folakemi. You can vote for other babies, but onl
+2026-01-08 03:26:46,822 [INFO] Batch complete.
