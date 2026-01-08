@@ -10294,3 +10294,13 @@
 2026-01-08 14:22:08,378 [INFO] Starting batch of 1 emails...
 2026-01-08 14:22:09,522 [WARNING] REJECTED: wvergine0@icq.com | Response: {"success":false,"data":"Security verification failed - invalid security token"}
 2026-01-08 14:22:09,522 [INFO] Batch complete.
+2026-01-08 16:25:32,337 [INFO] Scanning data sources for emails...
+2026-01-08 16:25:32,340 [INFO] Loaded 1000 emails from MOCK_DATA (1).csv
+2026-01-08 16:25:32,342 [INFO] Loaded 1000 emails from MOCK_DATA.csv
+2026-01-08 16:25:32,343 [INFO] --- Progress Summary ---
+2026-01-08 16:25:32,343 [INFO] Total Unique Emails: 2000
+2026-01-08 16:25:32,343 [INFO] Already Processed:   3748
+2026-01-08 16:25:32,343 [INFO] Remaining:           1
+2026-01-08 16:25:32,343 [INFO] Starting batch of 1 emails...
+2026-01-08 16:25:33,367 [WARNING] REJECTED: wvergine0@icq.com | Response: {"success":false,"data":"Security verification failed - invalid security token"}
+2026-01-08 16:25:33,367 [INFO] Batch complete.
