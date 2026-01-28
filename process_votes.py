@@ -60,7 +60,7 @@ def load_all_emails():
             logger.error(f"Error reading {file_path}: {e}")
     return sorted(list(emails))
 
-def send_vote(session, email):
+def send_vote(session, email, retry_count=0):
     """Sends a single vote using a shared session."""
     headers = {
         'User-Agent': random.choice(USER_AGENTS),
@@ -84,11 +84,23 @@ def send_vote(session, email):
                 return True
             else:
                 logger.warning(f"REJECTED: {email} | Response: {response.text[:100]}")
+                
+                # Retry once with a fake email
+                if retry_count == 0:
+                    from faker import Faker
+                    fake = Faker()
+                    new_email = fake.email()
+                    logger.info(f"RETRYING (1/1): {new_email}")
+                    return send_vote(session, new_email, retry_count=1)
+                else:
+                    logger.error(f"RETRY FAILED - giving up")
+                    return False
         else:
             logger.error(f"HTTP ERROR: {email} | Status: {response.status_code}")
+            return False
     except Exception as e:
         logger.error(f"CONNECTION ERROR: {email} | {e}")
-    return False
+        return False
 
 def main():
     processed = load_processed_emails()
