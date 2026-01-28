@@ -8,8 +8,7 @@ import logging
 
 # --- Configuration ---
 URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
-ENTRY_ID = '282'
-NONCE = '0389832a15'
+ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
 MAX_PER_RUN = 300 
@@ -68,14 +67,13 @@ def send_vote(session, email):
         'Referer': 'https://www.cussonsbaby.com.ng/',
         'Origin': 'https://www.cussonsbaby.com.ng',
         'X-Requested-With': 'XMLHttpRequest',
-        'Cookie': f'baby_competition_voted={ENTRY_ID}'
+        'Cookie': f'grwm_id={ENTRY_ID}'
     }
     
     payload = {
-        'action': 'baby_competition_vote',
-        'entry_id': ENTRY_ID,
+        'action': 'baby_grwm_vote',
+        'grwm_id': ENTRY_ID,
         'voter_email': email,
-        'nonce': NONCE,
     }
 
     try:
@@ -121,7 +119,7 @@ def main():
                     f.write(email + "\n")
             
             if idx < len(batch) - 1:
-                wait_time = random.uniform(3, 10)
+                wait_time = random.uniform(3, 8)
                 logger.info(f"Waiting {wait_time:.1f}s before next request...")
                 time.sleep(wait_time)
                 
