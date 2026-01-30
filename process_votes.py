@@ -11,7 +11,7 @@ URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
 ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 300 
+MAX_PER_RUN = 50 
 
 # --- Logging Setup ---
 logging.basicConfig(
