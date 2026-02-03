@@ -5,6 +5,7 @@ import random
 import os
 import glob
 import logging
+from faker import Faker
 
 # --- Configuration ---
 URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
@@ -122,7 +123,6 @@ def send_vote(session, email, retry_count=0):
                 
                 # Retry once with a fake email
                 if retry_count == 0:
-                    from faker import Faker
                     fake = Faker()
                     new_email = fake.email()
                     logger.info(f"RETRYING (1/1): {new_email}")
