@@ -15,7 +15,7 @@ ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
 MAX_PER_RUN = 1000
-MAX_WORKERS = 20  # Number of concurrent threads
+MAX_WORKERS = 10  # Number of concurrent threads
 
 # Thread-safe file writing
 file_lock = threading.Lock() 
@@ -119,7 +119,7 @@ def send_vote(session, email, retry_count=0):
     }
 
     try:
-        response = session.post(URL, headers=headers, data=payload, timeout=15)
+        response = session.post(URL, headers=headers, data=payload, timeout=30)
         if response.status_code == 200:
             if '"success":true' in response.text:
                 logger.info(f"SUCCESS: {email}")
@@ -149,7 +149,7 @@ def send_vote_with_delay(email):
     session = requests.Session()
     
     # Random delay before sending to spread out requests
-    delay = random.uniform(0.5, 2.0)
+    delay = random.uniform(2, 5.0)
     time.sleep(delay)
     
     try:
