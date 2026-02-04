@@ -5,6 +5,8 @@ import random
 import os
 import glob
 import logging
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from faker import Faker
 
 # --- Configuration ---
@@ -12,7 +14,11 @@ URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
 ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 550 
+MAX_PER_RUN = 1000
+MAX_WORKERS = 20  # Number of concurrent threads
+
+# Thread-safe file writing
+file_lock = threading.Lock() 
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -137,6 +143,28 @@ def send_vote(session, email, retry_count=0):
         logger.error(f"CONNECTION ERROR: {email} | {e}")
         return False
 
+def send_vote_with_delay(email):
+    """Wrapper function for threaded execution with random delay and thread-safe file writing."""
+    # Create a session per thread for better isolation
+    session = requests.Session()
+    
+    # Random delay before sending to spread out requests
+    delay = random.uniform(0.5, 2.0)
+    time.sleep(delay)
+    
+    try:
+        success = send_vote(session, email)
+        
+        # Thread-safe file writing
+        if success:
+            with file_lock:
+                with open(STATE_FILE, 'a') as f:
+                    f.write(email + "\n")
+        
+        return email, success
+    finally:
+        session.close()
+
 def main():
     processed = load_processed_emails()
     all_emails = load_all_emails()
@@ -154,26 +182,39 @@ def main():
 
     random.shuffle(to_process)
     batch = to_process[:MAX_PER_RUN]
-    logger.info(f"Starting batch of {len(batch)} emails...")
+    logger.info(f"Starting batch of {len(batch)} emails with {MAX_WORKERS} concurrent workers...")
     
-    session = requests.Session()
+    success_count = 0
+    failure_count = 0
     
     try:
-        for idx, email in enumerate(batch):
-            success = send_vote(session, email)
-            if success:
-                with open(STATE_FILE, 'a') as f:
-                    f.write(email + "\n")
+        # Use ThreadPoolExecutor for concurrent processing
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            # Submit all tasks
+            futures = {executor.submit(send_vote_with_delay, email): email for email in batch}
             
-            if idx < len(batch) - 1:
-                wait_time = random.uniform(3, 8)
-                logger.info(f"Waiting {wait_time:.1f}s before next request...")
-                time.sleep(wait_time)
+            # Process results as they complete
+            for idx, future in enumerate(as_completed(futures), 1):
+                email = futures[future]
+                try:
+                    result_email, success = future.result()
+                    if success:
+                        success_count += 1
+                    else:
+                        failure_count += 1
+                    
+                    # Log progress every 10 emails
+                    if idx % 10 == 0 or idx == len(batch):
+                        logger.info(f"Progress: {idx}/{len(batch)} | Success: {success_count} | Failed: {failure_count}")
+                        
+                except Exception as e:
+                    failure_count += 1
+                    logger.error(f"Task failed for {email}: {e}")
                 
     except KeyboardInterrupt:
         logger.info("Process stopped by user.")
     
-    logger.info("Batch complete.")
+    logger.info(f"Batch complete! Total Success: {success_count} | Total Failed: {failure_count}")
 
 if __name__ == "__main__":
     main()
