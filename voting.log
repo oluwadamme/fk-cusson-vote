@@ -41123,3 +41123,48 @@
 2026-02-05 23:37:07,360 [INFO] SUCCESS: lwolters3g@elegantthemes.com
 2026-02-05 23:37:07,361 [INFO] Progress: 1500/1500 | Success: 1500 | Failed: 0
 2026-02-05 23:37:07,362 [INFO] Batch complete! Total Success: 1500 | Total Failed: 0
+2026-02-05 23:51:19,021 [INFO] Scanning data sources for emails...
+2026-02-05 23:51:19,024 [INFO] Loaded 1000 emails from MOCK_DATA (17).csv
+2026-02-05 23:51:19,026 [INFO] Loaded 1000 emails from MOCK_DATA (3).csv
+2026-02-05 23:51:19,028 [INFO] Loaded 1000 emails from MOCK_DATA (9).csv
+2026-02-05 23:51:19,031 [INFO] Loaded 1000 emails from MOCK_DATA (24).csv
+2026-02-05 23:51:19,034 [INFO] Loaded 1000 emails from MOCK_DATA (111).csv
+2026-02-05 23:51:19,036 [INFO] Loaded 1000 emails from MOCK_DATA (15).csv
+2026-02-05 23:51:19,038 [INFO] Loaded 1000 emails from MOCK_DATA (8).csv
+2026-02-05 23:51:19,041 [INFO] Loaded 1000 emails from MOCK_DATA (4).csv
+2026-02-05 23:51:19,043 [INFO] Loaded 1000 emails from MOCK_DATA (101).csv
+2026-02-05 23:51:19,046 [INFO] Loaded 1000 emails from MOCK_DATA (2).csv
+2026-02-05 23:51:19,048 [INFO] Loaded 1000 emails from MOCK_DATA (6).csv
+2026-02-05 23:51:19,050 [INFO] Loaded 1000 emails from MOCK_DATA (41).csv
+2026-02-05 23:51:19,052 [INFO] Loaded 1000 emails from MOCK_DATA (16).csv
+2026-02-05 23:51:19,055 [INFO] Loaded 1000 emails from MOCK_DATA (71).csv
+2026-02-05 23:51:19,057 [INFO] Loaded 1000 emails from MOCK_DATA (11).csv
+2026-02-05 23:51:19,059 [INFO] Loaded 1000 emails from MOCK_DATA (61).csv
+2026-02-05 23:51:19,062 [INFO] Loaded 1000 emails from MOCK_DATA (81).csv
+2026-02-05 23:51:19,064 [INFO] Loaded 1000 emails from MOCK_DATA (25).csv
+2026-02-05 23:51:19,067 [INFO] Loaded 1000 emails from MOCK_DATA (21).csv
+2026-02-05 23:51:19,070 [INFO] Loaded 1000 emails from MOCK_DATA (121).csv
+2026-02-05 23:51:19,073 [INFO] Loaded 1000 emails from MOCK_DATA (14).csv
+2026-02-05 23:51:19,075 [INFO] Loaded 1000 emails from MOCK_DATA (7).csv
+2026-02-05 23:51:19,077 [INFO] Loaded 1000 emails from MOCK_DATA (18).csv
+2026-02-05 23:51:19,080 [INFO] Loaded 1000 emails from MOCK_DATA (91).csv
+2026-02-05 23:51:19,082 [INFO] Loaded 1000 emails from MOCK_DATA (5).csv
+2026-02-05 23:51:19,084 [INFO] Loaded 1000 emails from MOCK_DATA (12).csv
+2026-02-05 23:51:19,087 [INFO] Loaded 1000 emails from MOCK_DATA (31).csv
+2026-02-05 23:51:19,089 [INFO] Loaded 1000 emails from MOCK_DATA (23).csv
+2026-02-05 23:51:19,091 [INFO] Loaded 1000 emails from MOCK_DATA (10).csv
+2026-02-05 23:51:19,094 [INFO] Loaded 1000 emails from MOCK_DATA (51).csv
+2026-02-05 23:51:19,096 [INFO] Loaded 1000 emails from MOCK_DATA (22).csv
+2026-02-05 23:51:19,098 [INFO] Loaded 1000 emails from MOCK_DATA (19).csv
+2026-02-05 23:51:19,101 [INFO] Loaded 1000 emails from MOCK_DATA (20).csv
+2026-02-05 23:51:19,103 [INFO] Loaded 1000 emails from MOCK_DATA (13).csv
+2026-02-05 23:51:19,119 [INFO] --- Progress Summary ---
+2026-02-05 23:51:19,119 [INFO] Total Unique Emails: 34000
+2026-02-05 23:51:19,119 [INFO] Already Processed:   33997
+2026-02-05 23:51:19,119 [INFO] Remaining:           3
+2026-02-05 23:51:19,119 [INFO] Starting batch of 3 emails with 10 concurrent workers...
+2026-02-05 23:51:22,979 [INFO] SUCCESS: eiuorio52@wikimedia.org
+2026-02-05 23:51:25,717 [INFO] SUCCESS: wbusseyon@wisc.edu
+2026-02-05 23:51:25,725 [INFO] SUCCESS: bfreelandgy@webnode.com
+2026-02-05 23:51:25,726 [INFO] Progress: 3/3 | Success: 3 | Failed: 0
+2026-02-05 23:51:25,727 [INFO] Batch complete! Total Success: 3 | Total Failed: 0
