@@ -14,7 +14,7 @@ URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
 ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 1000
+MAX_PER_RUN = 1500
 MAX_WORKERS = 10  # Number of concurrent threads
 
 # Thread-safe file writing
