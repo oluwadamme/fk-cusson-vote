@@ -29223,3 +29223,35 @@
 2026-02-06 21:33:31,740 [INFO] Already Processed:   26000
 2026-02-06 21:33:31,740 [INFO] Remaining:           0
 2026-02-06 21:33:31,740 [INFO] All emails processed. Task complete!
+2026-02-06 22:27:12,283 [INFO] Scanning data sources for emails...
+2026-02-06 22:27:12,285 [INFO] Loaded 1000 emails from MOCK_DATA (17).csv
+2026-02-06 22:27:12,287 [INFO] Loaded 1000 emails from MOCK_DATA (3).csv
+2026-02-06 22:27:12,290 [INFO] Loaded 1000 emails from MOCK_DATA (9).csv
+2026-02-06 22:27:12,292 [INFO] Loaded 1000 emails from MOCK_DATA (24).csv
+2026-02-06 22:27:12,294 [INFO] Loaded 1000 emails from MOCK_DATA (15).csv
+2026-02-06 22:27:12,296 [INFO] Loaded 1000 emails from MOCK_DATA (8).csv
+2026-02-06 22:27:12,299 [INFO] Loaded 1000 emails from MOCK_DATA (26).csv
+2026-02-06 22:27:12,301 [INFO] Loaded 1000 emails from MOCK_DATA (4).csv
+2026-02-06 22:27:12,303 [INFO] Loaded 1000 emails from MOCK_DATA (2).csv
+2026-02-06 22:27:12,305 [INFO] Loaded 1000 emails from MOCK_DATA (6).csv
+2026-02-06 22:27:12,308 [INFO] Loaded 1000 emails from MOCK_DATA (27).csv
+2026-02-06 22:27:12,310 [INFO] Loaded 1000 emails from MOCK_DATA (16).csv
+2026-02-06 22:27:12,312 [INFO] Loaded 1000 emails from MOCK_DATA (11).csv
+2026-02-06 22:27:12,314 [INFO] Loaded 1000 emails from MOCK_DATA (25).csv
+2026-02-06 22:27:12,317 [INFO] Loaded 1000 emails from MOCK_DATA (21).csv
+2026-02-06 22:27:12,319 [INFO] Loaded 1000 emails from MOCK_DATA (14).csv
+2026-02-06 22:27:12,321 [INFO] Loaded 1000 emails from MOCK_DATA (7).csv
+2026-02-06 22:27:12,324 [INFO] Loaded 1000 emails from MOCK_DATA (18).csv
+2026-02-06 22:27:12,326 [INFO] Loaded 1000 emails from MOCK_DATA (5).csv
+2026-02-06 22:27:12,329 [INFO] Loaded 1000 emails from MOCK_DATA (12).csv
+2026-02-06 22:27:12,332 [INFO] Loaded 1000 emails from MOCK_DATA (23).csv
+2026-02-06 22:27:12,334 [INFO] Loaded 1000 emails from MOCK_DATA (10).csv
+2026-02-06 22:27:12,336 [INFO] Loaded 1000 emails from MOCK_DATA (22).csv
+2026-02-06 22:27:12,338 [INFO] Loaded 1000 emails from MOCK_DATA (19).csv
+2026-02-06 22:27:12,340 [INFO] Loaded 1000 emails from MOCK_DATA (20).csv
+2026-02-06 22:27:12,343 [INFO] Loaded 1000 emails from MOCK_DATA (13).csv
+2026-02-06 22:27:12,354 [INFO] --- Progress Summary ---
+2026-02-06 22:27:12,354 [INFO] Total Unique Emails: 26000
+2026-02-06 22:27:12,354 [INFO] Already Processed:   26000
+2026-02-06 22:27:12,354 [INFO] Remaining:           0
+2026-02-06 22:27:12,354 [INFO] All emails processed. Task complete!
