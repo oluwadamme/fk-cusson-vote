@@ -15776,3 +15776,23 @@
 2026-02-07 22:30:00,385 [INFO] SUCCESS: nanten2w@bloglovin.com
 2026-02-07 22:30:00,387 [INFO] Progress: 300/300 | Success: 300 | Failed: 0
 2026-02-07 22:30:00,388 [INFO] Batch complete! Total Success: 300 | Total Failed: 0
+2026-02-07 23:32:40,684 [INFO] Scanning data sources for emails...
+2026-02-07 23:32:40,687 [INFO] Loaded 1000 emails from MOCK_DATA (3).csv
+2026-02-07 23:32:40,689 [INFO] Loaded 1000 emails from MOCK_DATA (9).csv
+2026-02-07 23:32:40,691 [INFO] Loaded 1000 emails from MOCK_DATA (15).csv
+2026-02-07 23:32:40,694 [INFO] Loaded 1000 emails from MOCK_DATA (8).csv
+2026-02-07 23:32:40,696 [INFO] Loaded 1000 emails from MOCK_DATA (4).csv
+2026-02-07 23:32:40,699 [INFO] Loaded 1000 emails from MOCK_DATA (2).csv
+2026-02-07 23:32:40,701 [INFO] Loaded 1000 emails from MOCK_DATA (6).csv
+2026-02-07 23:32:40,703 [INFO] Loaded 1000 emails from MOCK_DATA (11).csv
+2026-02-07 23:32:40,706 [INFO] Loaded 1000 emails from MOCK_DATA (14).csv
+2026-02-07 23:32:40,708 [INFO] Loaded 1000 emails from MOCK_DATA (7).csv
+2026-02-07 23:32:40,710 [INFO] Loaded 1000 emails from MOCK_DATA (5).csv
+2026-02-07 23:32:40,713 [INFO] Loaded 1000 emails from MOCK_DATA (12).csv
+2026-02-07 23:32:40,715 [INFO] Loaded 1000 emails from MOCK_DATA (10).csv
+2026-02-07 23:32:40,717 [INFO] Loaded 1000 emails from MOCK_DATA (13).csv
+2026-02-07 23:32:40,724 [INFO] --- Progress Summary ---
+2026-02-07 23:32:40,724 [INFO] Total Unique Emails: 14000
+2026-02-07 23:32:40,724 [INFO] Already Processed:   14000
+2026-02-07 23:32:40,724 [INFO] Remaining:           0
+2026-02-07 23:32:40,724 [INFO] All emails processed. Task complete!
