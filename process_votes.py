@@ -122,6 +122,7 @@ def send_vote(session, email, retry_count=0):
         response = session.post(URL, headers=headers, data=payload, timeout=30)
         if response.status_code == 200:
             if '"success":true' in response.text:
+                logger.info(response.text)
                 logger.info(f"SUCCESS: {email}")
                 return True
             else:
