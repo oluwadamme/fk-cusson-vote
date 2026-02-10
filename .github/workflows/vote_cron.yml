@@ -1,9 +1,10 @@
 name: Automated Voting Cron
 
 on:
-  schedule:
-    # Run every 4 hours at a random minute (GitHub cron isn't exact anyway)
-    - cron: '0 */7 * * *'
+  # schedule:
+  #   # pause cron
+  #   # Run every 4 hours at a random minute (GitHub cron isn't exact anyway)
+  #   - cron: '0 */12 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
