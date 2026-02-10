@@ -15,7 +15,7 @@ ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
 MAX_PER_RUN = 70000
-MAX_WORKERS = 15 # Number of concurrent threads
+MAX_WORKERS = 20 # Number of concurrent threads
 
 # Thread-safe file writing
 file_lock = threading.Lock() 
