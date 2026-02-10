@@ -14,8 +14,8 @@ URL = "https://www.cussonsbaby.com.ng/wp-admin/admin-ajax.php"
 ENTRY_ID = '29'
 STATE_FILE = "progress.txt"
 LOG_FILE = "voting.log"
-MAX_PER_RUN = 20000
-MAX_WORKERS = 15  # Number of concurrent threads
+MAX_PER_RUN = 70000
+MAX_WORKERS = 15 # Number of concurrent threads
 
 # Thread-safe file writing
 file_lock = threading.Lock() 
@@ -150,7 +150,7 @@ def send_vote_with_delay(email):
     session = requests.Session()
     
     # Random delay before sending to spread out requests
-    delay = random.uniform(2, 5.0)
+    delay = random.uniform(3, 6.0)
     time.sleep(delay)
     
     try:
